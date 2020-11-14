@@ -45,7 +45,7 @@ func (node *ListNode) PrintBackward() {
 
 // List
 
-func (list *List) SetTail() *ListNode {
+func (list *List) GetTail() *ListNode {
 	node := list.Tail
 	if node == nil {
 		node = list.Head
@@ -76,7 +76,7 @@ func (list *List) Add(value int) {
 		list.Head.Add(value)
 	}
 
-	list.Tail = list.SetTail()
+	list.Tail = list.GetTail()
 }
 
 func (list *List) PrintForward() {
