@@ -7,15 +7,11 @@ import (
 func sort(numbers []int) {
 	for i := 0; i < len(numbers); i++ {
 		j := i - 1
-		for j >= 0 {
-			if numbers[j] > numbers[j+1] {
-				aux := numbers[j]
-				numbers[j] = numbers[j+1]
-				numbers[j+1] = aux
-				j--
-			} else {
-				break
-			}
+		for j >= 0 && numbers[j] > numbers[j+1] {
+			aux := numbers[j]
+			numbers[j] = numbers[j+1]
+			numbers[j+1] = aux
+			j--
 		}
 	}
 }
