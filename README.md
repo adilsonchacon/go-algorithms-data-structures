@@ -6,9 +6,10 @@ So far, here, you can find:
 * Algorithms
   * Sort
     * [Insertion](https://github.com/adilsonchacon/go-algorithms-data-structures/blob/main/algorithms/sort/insertion.go)
+    * Quick Sort (_comming soon_)
 * Data Structures
   * Binary Trees
-    * [Regular](https://github.com/adilsonchacon/go-algorithms-data-structures/tree/main/data-structures/binary-trees/regular/regular.go)
+    * [Regular](https://github.com/adilsonchacon/go-algorithms-data-structures/tree/main/data-structures/binary-trees/regular/regular .go)
     * [Balanced](https://github.com/adilsonchacon/go-algorithms-data-structures/tree/main/data-structures/binary-trees/balanced/balanced.go)
   * Linked Lists
     * Simple
