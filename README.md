@@ -8,8 +8,8 @@ So far, here, you can find:
     * [Insertion](https://github.com/adilsonchacon/go-algorithms-data-structures/blob/main/algorithms/sort/insertion.go)
 * Data Structures
   * Binary Trees
-    * [Simple](https://github.com/adilsonchacon/go-algorithms-data-structures/tree/main/data-structures/binary-trees/regular)
-    * [Balanced](https://github.com/adilsonchacon/go-algorithms-data-structures/tree/main/data-structures/binary-trees/balanced)
+    * [Regular](https://github.com/adilsonchacon/go-algorithms-data-structures/tree/main/data-structures/binary-trees/regular/regular.go)
+    * [Balanced](https://github.com/adilsonchacon/go-algorithms-data-structures/tree/main/data-structures/binary-trees/balanced/balanced.go)
   * Linked Lists
     * Simple
       * [Regular](https://github.com/adilsonchacon/go-algorithms-data-structures/blob/main/data-structures/linked-lists/simple/simple-regular.go)
