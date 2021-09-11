@@ -5,19 +5,19 @@ So far, here, you can find:
 
 * Algorithms
   * Sort
-    * Insertion
+    * [Insertion](https://github.com/adilsonchacon/go-algorithms-data-structures/blob/main/algorithms/sort/insertion.go)
 * Data Structures
   * Binary Trees
-    * Simple
-    * Balanced
+    * [Simple](https://github.com/adilsonchacon/go-algorithms-data-structures/tree/main/data-structures/binary-trees/regular)
+    * [Balanced](https://github.com/adilsonchacon/go-algorithms-data-structures/tree/main/data-structures/binary-trees/balanced)
   * Linked Lists
     * Simple
-      * Regular
-      * Ordered
-      * With tail
+      * [Regular](https://github.com/adilsonchacon/go-algorithms-data-structures/blob/main/data-structures/linked-lists/simple/simple-regular.go)
+      * [Ordered](https://github.com/adilsonchacon/go-algorithms-data-structures/blob/main/data-structures/linked-lists/simple/simple-ordered.go)
+      * [With tail](https://github.com/adilsonchacon/go-algorithms-data-structures/blob/main/data-structures/linked-lists/simple/simple-with-tail.go)
     * Double
-      * Regular
-      * Ordered
+      * [Regular](https://github.com/adilsonchacon/go-algorithms-data-structures/blob/main/data-structures/linked-lists/double/double-regular.go)
+      * [Ordered](https://github.com/adilsonchacon/go-algorithms-data-structures/blob/main/data-structures/linked-lists/double/double-ordered.go)
     * Circular
-      * Regular
-      * Ordered
+      * [Regular](https://github.com/adilsonchacon/go-algorithms-data-structures/blob/main/data-structures/linked-lists/circular/circular-regular.go)
+      * [Ordered](https://github.com/adilsonchacon/go-algorithms-data-structures/blob/main/data-structures/linked-lists/circular/circular-ordered.go)
