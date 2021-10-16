@@ -22,7 +22,7 @@ type Tree struct {
 
 func (node *TreeNode) Insert(newTreeNode *TreeNode) error {
 	if newTreeNode.Value == node.Value {
-		return errors.New(fmt.Sprintf("value %d is already in tree"))
+		return errors.New(fmt.Sprintf("value %d is already in tree", newTreeNode.Value))
 	} else if newTreeNode.Value > node.Value {
 		if node.Right == nil {
 			node.Right = newTreeNode
@@ -35,7 +35,7 @@ func (node *TreeNode) Insert(newTreeNode *TreeNode) error {
 			err := node.Right.Insert(newTreeNode)
 			if err == nil {
 				if math.Abs(float64(node.Right.balance)) > 1 {
-					fmt.Println("(Right) node needs balancing")
+					// fmt.Println("(Right) node needs balancing")
 					node.Balance(node.Right)
 				} else {
 					node.balance--
@@ -54,7 +54,7 @@ func (node *TreeNode) Insert(newTreeNode *TreeNode) error {
 			err := node.Left.Insert(newTreeNode)
 			if err == nil {
 				if math.Abs(float64(node.Left.balance)) > 1 {
-					fmt.Println("(Left) node needs balancing")
+					// fmt.Println("(Left) node needs balancing")
 					node.Balance(node.Left)
 				} else {
 					node.balance++
@@ -67,16 +67,16 @@ func (node *TreeNode) Insert(newTreeNode *TreeNode) error {
 
 func (node *TreeNode) Balance(targetNode *TreeNode) {
 	if targetNode.Right != nil && targetNode.Right.balance == -1 {
-		fmt.Println("RotateLeft")
+		// fmt.Println("RotateLeft")
 		node.RotateLeft(targetNode)
 	} else if targetNode.Left != nil && targetNode.Left.balance == 1 {
-		fmt.Println("RotateRight")
+		// fmt.Println("RotateRight")
 		node.RotateRight(targetNode)
 	} else if targetNode.Left != nil && targetNode.Left.balance == -1 {
-		fmt.Println("RotateLeftRight")
+		// fmt.Println("RotateLeftRight")
 		node.RotateLeftRight(targetNode)
 	} else if targetNode.Right != nil && targetNode.Right.balance == 1 {
-		fmt.Println("RotateRightLeft")
+		// fmt.Println("RotateRightLeft")
 		node.RotateRightLeft(targetNode)
 	}
 }
@@ -112,7 +112,6 @@ func (node *TreeNode) RotateRight(targetNode *TreeNode) {
 }
 
 func (node *TreeNode) RotateLeftRight(targetNode *TreeNode) {
-	// targetNode.Left.Right.balance = 1
 	targetNode.RotateLeft(targetNode.Left)
 	targetNode.Left.balance = 1
 
@@ -124,7 +123,6 @@ func (node *TreeNode) RotateLeftRight(targetNode *TreeNode) {
 }
 
 func (node *TreeNode) RotateRightLeft(targetNode *TreeNode) {
-	// targetNode.Right.Left.balance = -1
 	targetNode.RotateRight(targetNode.Right)
 	targetNode.Right.balance = -1
 
@@ -178,7 +176,6 @@ func (tree *Tree) Insert(value int) {
 		err := tree.Root.Insert(node)
 		if err == nil {
 			if math.Abs(float64(tree.Root.balance)) > 1 {
-				fmt.Println("(Root) node needs balancing")
 				tree.Balance()
 			}
 		} else {
