@@ -210,108 +210,10 @@ func (tree *Tree) Find(value int) (*TreeNode, bool) {
 func main() {
 	tree := &Tree{}
 	tree.Insert(5)
-	tree.Print()
-	fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-
 	tree.Insert(7)
-	tree.Print()
-	fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-
 	tree.Insert(1)
-	tree.Print()
-	fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-
 	tree.Insert(0)
-	tree.Print()
-	fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-
 	tree.Insert(3)
-	tree.Print()
-	fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-
 	tree.Insert(4)
 	tree.Print()
-	fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-	//
-	// tree.Insert(40)
-	// tree.Print()
-	// fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-	//
-	// tree.Insert(80)
-	// tree.Print()
-	// fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-	//
-	// tree.Insert(30)
-	// tree.Print()
-	// fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-	//
-	// tree.Insert(20)
-	// tree.Print()
-	// fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-	//
-	// tree.Insert(10)
-	// tree.Print()
-	// fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-
-	// tree.Insert(40)
-	// tree.Print()
-	// fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-	//
-	// tree.Insert(20)
-	// tree.Print()
-	// fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-	//
-	// tree.Insert(25)
-	// tree.Print()
-	// fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-
-	// tree.Insert(40)
-	// tree.Print()
-	// fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-	//
-	// tree.Insert(50)
-	// tree.Print()
-	// fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-	//
-	// tree.Insert(45)
-	// tree.Print()
-	// fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-
-	// tree.Insert(40)
-	// tree.Print()
-	// fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-	//
-	// tree.Insert(20)
-	// tree.Print()
-	// fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-	//
-	// tree.Insert(10)
-	// tree.Print()
-	// fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-	//
-	// tree.Insert(25)
-	// tree.Print()
-	// fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-	//
-	// tree.Insert(30)
-	// tree.Print()
-	// fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-	//
-	// tree.Insert(22)
-	// tree.Print()
-	// fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-	//
-	// tree.Insert(50)
-	// tree.Print()
-	// fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-
-	value := 4
-	_, ok := tree.Find(value)
-	if ok {
-		fmt.Printf("Success! Value %d was found!\n", value)
-	} else {
-		fmt.Printf("Oops! Value %d was NOT found!\n", value)
-	}
-
-	// tree.Find(211)
 }
