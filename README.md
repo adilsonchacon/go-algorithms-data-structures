@@ -6,7 +6,7 @@ So far, here, you can find:
 * Algorithms
   * Sort
     * [Insertion](https://github.com/adilsonchacon/go-algorithms-data-structures/blob/main/algorithms/sort/insertion.go)
-    * Quick Sort (_comming soon_)
+    * Quick Sort (_coming soon_)
   * Permutation
     * [Heap algorithm](https://github.com/adilsonchacon/go-algorithms-data-structures/blob/main/algorithms/permutation/heap-algorithm.go)
 * Data Structures
